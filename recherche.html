@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colocation Etudiants</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #001F3F; color: #FFFFFF; /* Bleu nuit */
+        }
+        .header {
+            background-color: #FFFFFF; /* Blanc */
+        }
+        .header .navbar-brand {
+            font-size: 24px;
+            color: #001F3F;
+        }
+        .header .btn-primary {
+            background-color: #001F3F;
+            border-color: #001F3F;
+        }
+        .header .btn-primary:hover {
+            background-color: #0023DB;
+            border-color: #0023DB;
+        }
+        .header .social-icons a {
+            color: #001F3F;
+            margin: 0 10px;
+        }
+        .header .social-icons a:hover {
+            color: #0023DB;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light header fixed-top">
+        <a class="navbar-brand" href="#">Colocation Etudiants</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profil.html">Créer un profil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="recherche.html">Rechercher un colocataire</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <a class="btn btn-primary" href="profil.html">Créer un profil</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </nav>
+   
+
+    <style>
+        .search-section {
+            padding: 60px 0;
+        }
+        .result-card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light header fixed-top">
+        <!-- Code du header ici -->
+    </nav>
+    <div class="container search-section">
+        <h2>Rechercher un colocataire</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="searchBudget">Budget</label>
+                    <input type="text" class="form-control" id="searchBudget" placeholder="Budget maximum">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="searchLocation">Localisation</label>
+                    <input type="text" class="form-control" id="searchLocation" placeholder="Localisation souhaitée">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="searchPreferences">Préférences</label>
+                    <input type="text" class="form-control" id="searchPreferences" placeholder="Fumeur, animaux, etc.">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Rechercher</button>
+        </form>
+
+        <h3 class="mt-5">Résultats de la recherche</h3>
+        <div class="result-card">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Nom de l'étudiant</h5>
+                    <p class="card-text">Budget: 250 000 CFA</p>
+                    <p class="card-text">Localisation: Cotonou</p>
+                    <p class="card-text">Préférences: Non-fumeur, Pas d'animaux</p>
+                    <a href="#" class="btn btn-primary">Envoyer un message</a>
+                </div>
+            </div>
+        </div>
+        <!-- Répéter le bloc ci-dessus pour chaque profil trouvé -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
